@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component'
 import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
+import { CrudComponent } from './components/crud/crud.component';
 
 
 const routes: Routes = [
