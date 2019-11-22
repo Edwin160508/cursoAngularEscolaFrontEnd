@@ -16,4 +16,12 @@ export class NgIfNgForComponent implements OnInit {
   obtemNumero(valor:number){
     this.numero = valor;
   }
+
+  apenasNumeros(event){
+    const codigoChar = (event.which) ? event.which : event.keyCode;
+    if(codigoChar > 31 &&(codigoChar < 48 || codigoChar > 57)){
+      return false;
+    }
+    return true;
+  }
 }
